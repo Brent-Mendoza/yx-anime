@@ -60,7 +60,8 @@
 
 .content{
   grid-area: content;
-  width: 1400px;
+  max-width: 1400px;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -121,13 +122,14 @@
 }
 
 .card-anime h4{
-  width: 200px;
+  width: 100%;
   text-align: center;
   background: rgb(30,30,30)
 }
 
 .pagination{
-  width: 1400px;
+  max-width: 1400px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -470,7 +472,7 @@
   /* Mobile - 2 columns */
   @media (max-width: 480px) {
     .content{
-      width: 480px;
+      width: 100%;
     }
     .anime-list {
       width: 100%;
@@ -524,6 +526,12 @@
     }
     .close{
       font-size: 1rem;
+    }
+    .anime-modal{
+      overflow-y: auto;
+    }
+    .header{
+      padding: 0;
     }
   }
 
