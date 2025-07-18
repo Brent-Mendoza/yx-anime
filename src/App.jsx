@@ -86,7 +86,7 @@ function App() {
       {isLoading && 
         <div className="content">
           <div className="loading">
-            <img src="/loading4.gif" alt="" />
+            <img src={`${import.meta.env.BASE_URL}loading4.gif`} alt="" />
             <h1>LOADING...</h1>
           </div>
         </div>
